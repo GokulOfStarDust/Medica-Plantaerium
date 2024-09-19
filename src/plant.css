@@ -1,0 +1,78 @@
+.plantsBackgroundImage{
+    position: absolute;
+    object-fit:cover;
+    width: 100vw;
+    height: 130lvh;
+    z-index: -1;
+  }
+
+.categoryNav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100vw;
+    height : calc(5.5vh + 13px);
+    margin-left: -60px;
+    padding: 30px;
+}
+
+#categoryDropdown{
+    border-radius: 20px;
+    padding: 8px;
+    font-size: 16px;
+    font-family: poppins;
+    margin-left: 8px;
+
+}
+
+.imageTiles{
+    display: flex;
+    flex-wrap:nowrap;
+    flex-direction: column;
+    width: 35vw;
+    height: 45vh;
+    justify-content: center;
+    align-items: center;
+    min-width: 246px;
+    min-height: 300px;
+    max-width: 330px;
+    max-height: 450px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.imageTiles:hover{
+    box-shadow: 0px 0px 5px 0.1px rgba(0, 0, 0, 0.493);
+}
+
+.imageTiles > img{
+    width: 30vw;
+    height: 35vh;
+    min-width: 200px;
+    max-width: 285px;
+    max-height: 220px;
+    object-fit: contain;    
+}
+
+.imageTiles > p{
+    margin: 3px;
+    font-family: poppins;
+    font-size: 15px;
+}
+
+.imageTiles > p:first-of-type{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.imageTilesDiv{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    gap: 20px;
+}

@@ -1,0 +1,252 @@
+
+
+.navMain{
+  height: calc(5.5vh + 13px);
+  width: 100lvw;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url('./images/bgNavbar.jpg'); 
+}
+
+
+.sideMenuIcon{
+  height: 3.5lvh;
+  width: 3vw;
+  min-width: 25px;
+  max-width: 45px;
+  padding: 4px;
+  object-fit: contain;
+  z-index: 99;
+}
+
+
+.sideMenuIcon:hover{
+  background-color: rgba(135, 168, 135, 0.966);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sideMenuButton{
+  height: 4lvh;
+  width: 3vw;
+  min-width: 25px;
+  max-width: 60px;
+  padding: 0px;
+  border-radius: 10px;
+  margin-right: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  border:none;
+}
+
+.sideMenuAndLogoDiv{
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 5.5lvh;
+  width: 18.5vw;
+  padding: 0px;
+  margin-left: 3px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  border:none;
+}
+
+.logoImage{
+  object-fit: contain;
+  height: 5.5lvh;
+  width: 14vw;
+  min-width: 100px;
+  max-width: 160px;
+}
+
+
+@media (max-width: 480px) {
+  .logoImage{
+    margin-left: -25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .searchBarDiv {
+    padding: 10px;
+    display: none !important; /* Hide the search bar on screens smaller than 768px */
+  }
+}
+
+
+.searchBarDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35vw;
+  margin-left: -10px;
+  position: relative;
+}
+
+.searchBarArea{
+  width: 35vw;
+  height: 4lvh;
+  padding-left: 40px;
+  padding-right: 5px;
+  font-size: 16px;
+  font-family: poppins;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+}
+
+.searchBarArea:hover, .searchBarArea:focus{
+  box-shadow: 1px 1px 8px 0.1px rgba(7, 7, 7, 0.61);
+}
+
+.searchIcon {
+  position: absolute; 
+  top: 25%;
+  right: 15px; 
+  width: 20px; 
+  cursor: pointer;
+}
+
+.navigatePages{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: min(4.3vw,20px);
+  font-family: Quicksand;
+  margin: 0px;
+  padding: 0px 10px 0px 0px;
+}
+
+.navigatePages>li{
+  padding: min(1.3vw, 14px) 1.3vw min(1.3vw, 14px) 1.3vw;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.navigatePages>li:hover{
+  background-color: rgba(135, 168, 135, 0.589);
+  cursor: pointer;
+}
+
+
+
+.ActiveSuggestBox{
+  position: absolute;
+  top: 105%;
+  z-index: 999;
+  width: 35vw;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  border: 0.5px solid rgba(126, 124, 124, 0.507);
+  overflow: scroll;
+}
+
+.UnActiveSuggestBox{
+  display: none;
+}
+
+.suggestBoxList{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  list-style: none;
+  color: rgb(44, 44, 44);
+  font-size: 20px;
+  font-family: poppins;
+}
+
+.suggestBoxitems{
+  width: 33.8vw;
+  padding: 12px;
+  border-bottom: 1px solid rgba(133, 133, 133, 0.61);
+}
+
+.suggestBoxitems:hover{
+  background-color: rgb(187, 187, 187);
+  color: black;
+}
+
+.sideMenu{
+  position: absolute;
+  z-index: 9999;
+  margin-left: -5px;
+  margin-top: -5px;
+  top: 0;
+  width: 25vw;
+  min-width: 280px;
+  height: 100lvh;
+  background-color: rgb(255, 255, 255);
+  transition: all 5s ease 2s;
+  border-right: 0.2px solid rgba(150, 150, 150, 0.664);
+  overflow: hidden;
+}
+
+.NotSideMenu{
+  display: none;
+}
+
+.sideMenuList{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  list-style: none;
+  color: rgb(44, 44, 44);
+  font-size: 20px;
+  font-family: poppins;
+}
+
+.sideMenuItems{
+  width: 23.8vw;
+  min-width: 280px;
+  padding: 12px 20px 12px 12px;
+  border-bottom: 1px solid rgba(133, 133, 133, 0.61);
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.SideMenuLink{
+  color: black;
+  padding-right: 100px;
+}
+
+.sideMenuItems:first-child{
+  border-top:1px solid rgba(133, 133, 133, 0.61) ;
+}
+
+.sideMenuItems:hover{
+  background-color: rgb(187, 187, 187);
+  color: black;
+  cursor: pointer;
+}
+
+.sideMenuDivX{
+  display: flex;
+  justify-content: end;
+  width: 23.8vw;
+  min-width: 280px;
+}
+
+.sideMenuButtonX{
+  border: none;
+  padding: 10px;
+  margin-top: 15px;
+  margin-right: 10px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+.sideMenuButtonX:hover{
+  cursor: pointer;
+}
+
+
